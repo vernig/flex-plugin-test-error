@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "@twilio/flex-ui": "^1",
+    "rxjs-compat": "^6.6.3",
     "typescript": "^3"
   }
 }
