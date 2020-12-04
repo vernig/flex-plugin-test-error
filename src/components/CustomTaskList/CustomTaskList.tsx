@@ -2,6 +2,7 @@ import React from 'react';
 
 import { CustomTaskListComponentStyles } from './CustomTaskList.Styles';
 import { StateToProps, DispatchToProps } from './CustomTaskList.Container';
+import { withTaskContext } from '@twilio/flex-ui';
 
 interface OwnProps {
   // Props passed directly to the component
@@ -26,4 +27,4 @@ const CustomTaskList = (props: Props) => {
   );
 };
 
-export default CustomTaskList;
+export default withTaskContext<Props, React.ComponentType<Props>>(CustomTaskList);
