@@ -4,5 +4,8 @@ module.exports = (config, { isProd, isDev, isTest }) => {
    * Consult https://jestjs.io/docs/en/configuration for more information.
    */
 
+  config.transformIgnorePatterns = [
+    "<rootDir>/node_modules/(?!wavesurfer)"
+  ]
   return config;
 }
